@@ -16,10 +16,7 @@ class videoPlaylist {
         };
         this.config = Object.assign({}, configDefault, config);
         let video = document.createElement('video');
-        if (document.querySelectorAll(element).length !== 1){
-            throw "Please make sure there is one wrapper only";
-        }
-        this.wrapper = document.querySelectorAll(element)[0];
+        this.wrapper = element;
         this.video = this.wrapper.appendChild(video);
 
         if (this.config.randomList === true){
