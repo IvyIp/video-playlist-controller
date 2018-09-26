@@ -41,8 +41,8 @@ They can be called by PlayListController.<method>.
 | getIsPlaying() | Get the play State. | false |
 | getCurrentVideo() | Get the current video's information. | {index: 0, video: "video.mp4"} |
 | getRepeatCount() | Number of time the list has repeated | 2 |
-| play() | Continue to play| - |
-| pause() | Pause the video| - |
+| play() | Continue to play| NONE |
+| pause() | Pause the video| NONE |
 
 ## Events
 Events are emitted when certain criteria are met.
