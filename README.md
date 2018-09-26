@@ -1,5 +1,5 @@
 # js-video-playlist-controller
-A javascript video playlist contorller.
+A javascript video playlist controller.
 This handle the play states of video in the play list.
 ## Demo
 https://ivyip.github.io/videoPlayListController/
