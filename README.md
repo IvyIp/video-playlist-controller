@@ -19,8 +19,9 @@ Example
 <div id="video-wrapper"></div>
 ...
 <script>
+let wrapper = document.getElementById("video-wrapper");
 let PlayListController =
-new videoPlaylist("#video-wrapper", ["1.mp4", "2.mp4", "3.mp4"], {autoplay: false, loop:true});
+new videoPlaylist(wrapper, ["1.mp4", "2.mp4", "3.mp4"], {autoplay: false, loop:true});
 </script>
 ```
 ## Options
@@ -48,7 +49,7 @@ Events are emitted when certain criteria are met.
 They dispatched by the video wrapper.
 Event can be caught in this way by pure javascript:
 ```
-document.querySelectorAll("#video-wrapper")[0].addEventListener('videoChanged', function (e) {
+wrapper.addEventListener('videoChanged', function (e) {
     console.log(`Currnet video: index ${e.detail.index} , path: ${e.detail.video}`);
 });
 ```
