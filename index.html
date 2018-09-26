@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="src/js-video-playlist-controller.js"></script>
+    <style>
+      #video-wrapper>video{
+        max-width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-wrapper">
+    </div>
+  <script>
+    let list = ["demo/1.mp4", "demo/2.mp4", "demo/3.mp4"];
+    let videoPlayListController = new videoPlaylist("#video-wrapper", list, {autoplay: true, loop: false});
+    document.querySelectorAll("#video-wrapper")[0].addEventListener('videoChanged', function (e) {
+        console.log(`Change to: index: ${e.detail.index} src: ${e.detail.video}`);
+    });
+    document.querySelectorAll("#video-wrapper")[0].addEventListener('playListEnded', function (e) {
+        console.log(`PlayList Ended`);
+    });
+  </script>
+  </body>
+</html>
