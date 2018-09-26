@@ -36,6 +36,7 @@ You can try to override some default value by setting the options.
 ## Methods
 Some methods are provided for checking the status of the video.
 They can be called by PlayListController.<method>.
+
 | Method | Description | Return Example |
 | --- | --- | --- |
 | getIsPlaying() | Get the play State. | false |
